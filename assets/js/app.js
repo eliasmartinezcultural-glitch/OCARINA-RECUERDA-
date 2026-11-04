@@ -36,5 +36,5 @@ $("#themeFilter").addEventListener("change",e=>{state.theme=e.target.value;rende
 $("#periodFilter").addEventListener("change",e=>{state.period=e.target.value;render();});
 $("#clearSearch").addEventListener("click",()=>{$("#searchInput").value="";state.query="";render();});
 $("#menuToggle").addEventListener("click",()=>{const nav=$("#mainNav");const open=nav.classList.toggle("open");$("#menuToggle").setAttribute("aria-expanded",String(open));});
-document.querySelectorAll(".room-card").forEach(card=>card.addEventListener("click",()=>{const room=card.dataset.room;$("#themeFilter").value=room;state.theme=room;render();}));
+document.querySelectorAll(".room-card").forEach(card=>card.addEventListener("click",()=>{const room=card.dataset.room;const map={territorio:"territorio",agua:"produccion",fundacion:"fundacion",familias:"familias",instituciones:"instituciones",produccion:"produccion",cultura:"cultura",presente:""};state.theme=map[room]||"";$("#themeFilter").value=state.theme;render();}));
 init();
