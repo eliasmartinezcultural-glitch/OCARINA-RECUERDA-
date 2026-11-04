@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263b32">
+  <meta name="description" content="Museo Virtual de San Patricio del Chañar. Archivo abierto de historia, documentos, fotografías, mapas y memoria comunitaria.">
+  <title>Ocarina Recuerda — Museo Virtual de San Patricio del Chañar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Ocarina Recuerda, inicio">
+      <span class="brand-mark">OR</span><span><strong>OCARINA RECUERDA</strong><small>MEMORIA · HISTORIA · TERRITORIO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menú</button>
+    <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+      <a href="#salas">Explorar salas</a><a href="#archivo">Archivo</a><a href="#cronologia">Cronología</a><a href="#proyecto">El proyecto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">SAN PATRICIO DEL CHAÑAR · NEUQUÉN · PATAGONIA</p>
+        <h1>Un pueblo.<br><em>Sus documentos.</em><br>Sus historias.</h1>
+        <p class="hero-lead">Un recorrido abierto por la memoria chañarense: documentos, libros, fotografías, mapas, investigaciones, voces y huellas del territorio.</p>
+        <a class="primary-link" href="#archivo">Entrar al archivo <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración editorial del paisaje del valle, el río y los canales de riego">
+        <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="river"></div><div class="field-lines"></div>
+        <span class="art-caption">AGUA · TIERRA · MEMORIA</span>
+      </div>
+      <div class="hero-bottom"><span>ARCHIVO DIGITAL COMUNITARIO</span><span>EDICIÓN ABIERTA · 2026</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div><p class="eyebrow">UNA MEMORIA EN CONSTRUCCIÓN</p><h2>El Chañar contado<br>desde sus huellas.</h2></div>
+      <p>Este museo reúne y conecta materiales que ya existen: archivos públicos, publicaciones, investigaciones, hemerotecas y memorias de la comunidad. Cada pieza conserva su procedencia y sus condiciones de consulta. No inventamos el pasado: buscamos, verificamos y documentamos.</p>
+    </section>
+
+    <section id="archivo" class="search-section">
+      <div class="section-wrap">
+        <p class="eyebrow">BIBLIOTECA Y ARCHIVO</p>
+        <h2>¿Qué querés descubrir?</h2>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar por título, autor, año, tema o palabra..." autocomplete="off"><button id="clearSearch" type="button" aria-label="Limpiar búsqueda">×</button></label>
+        <div class="filters" aria-label="Filtrar documentos">
+          <label>Tipo <select id="typeFilter"><option value="">Todos los formatos</option></select></label>
+          <label>Tema <select id="themeFilter"><option value="">Todos los temas</option></select></label>
+          <label>Época <select id="periodFilter"><option value="">Todas las épocas</option></select></label>
+        </div>
+        <div class="results-heading"><span id="resultCount" aria-live="polite">Cargando catálogo…</span><span>Fuentes enlazadas · consulta gratuita</span></div>
+        <div id="catalogGrid" class="catalog-grid"><p class="loading">Preparando el archivo…</p></div>
+      </div>
+    </section>
+
+    <section id="salas" class="rooms-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">RECORRER EL MUSEO</p><h2>Ocho puertas para entrar<br>a la historia.</h2></div><p>La historia no es una sola línea. Se construye con territorio, trabajo, familias, instituciones y vida cotidiana.</p></div>
+      <div class="rooms-grid">
+        <a class="room-card room-1" href="#archivo" data-room="territorio"><span>01 / TERRITORIO</span><strong>Antes del pueblo</strong><small>El río, los caminos, las huellas antiguas.</small></a>
+        <a class="room-card room-2" href="#archivo" data-room="agua"><span>02 / AGUA Y TIERRA</span><strong>Transformar el valle</strong><small>Riego, chacras, paisaje y producción.</small></a>
+        <a class="room-card room-3" href="#archivo" data-room="fundacion"><span>03 / ORÍGENES</span><strong>Nace una localidad</strong><small>La formación urbana e institucional.</small></a>
+        <a class="room-card room-4" href="#archivo" data-room="familias"><span>04 / PERSONAS</span><strong>Familias y pobladores</strong><small>Historias de vida, oficios y memorias.</small></a>
+        <a class="room-card room-5" href="#archivo" data-room="instituciones"><span>05 / COMUNIDAD</span><strong>Instituciones</strong><small>Escuelas, bibliotecas, clubes y asociaciones.</small></a>
+        <a class="room-card room-6" href="#archivo" data-room="produccion"><span>06 / TRABAJO</span><strong>El valle productivo</strong><small>Fruticultura, empaque, comercio y trabajo.</small></a>
+        <a class="room-card room-7" href="#archivo" data-room="cultura"><span>07 / IDENTIDAD</span><strong>Cultura y expresión</strong><small>Arte, deporte, fiestas y literatura.</small></a>
+        <a class="room-card room-8" href="#archivo" data-room="presente"><span>08 / PRESENTE</span><strong>El Chañar actual</strong><small>Transformaciones y memoria contemporánea.</small></a>
+      </div>
+    </section>
+
+    <section id="cronologia" class="timeline-section">
+      <div class="section-wrap">
+        <p class="eyebrow">TIEMPO Y MEMORIA</p><h2>Una historia para seguir investigando.</h2>
+        <div class="timeline">
+          <article><time>1881–1882</time><p>Mensuras históricas mencionadas en la reseña de identidad municipal. <a href="https://www.sanpatricio.gob.ar/identidad" target="_blank" rel="noopener">Consultar fuente ↗</a></p></article>
+          <article><time>1966–1969</time><p>Adquisición de tierras, proyecto de riego y primeras tareas de sistematización, según reseñas institucionales. <a href="https://www.sanpatricio.gob.ar/identidad" target="_blank" rel="noopener">Consultar fuente ↗</a></p></article>
+          <article><time>21 MAY 1973</time><p>Fecha de fundación consignada en publicaciones oficiales provinciales. <a href="https://www.estadisticaneuquen.gob.ar/static/archivos/Publicaciones/InfMunBasica/Basica20062007/Inicio/cartografia/San%20Patricio.pdf" target="_blank" rel="noopener">Consultar documento ↗</a></p></article>
+          <article><time>2004 / 2006</time><p>Publicación de la Carta Orgánica Municipal en el Boletín Oficial provincial. <a href="https://boficial.neuquen.gov.ar/Boletines/bo04021302862a.pdf" target="_blank" rel="noopener">Consultar documento ↗</a></p></article>
+        </div>
+        <p class="note">Cronología preliminar: las fechas y relatos se revisan contra documentos primarios. Una referencia publicada no equivale por sí sola a una comprobación definitiva.</p>
+      </div>
+    </section>
+
+    <section id="proyecto" class="project-section section-wrap">
+      <div><p class="eyebrow">UN ARCHIVO ABIERTO</p><h2>La memoria se construye entre todos.</h2></div>
+      <div><p>Ocarina Recuerda es una iniciativa independiente de Ocarina Producciones. Busca facilitar el acceso a fuentes, reconocer a quienes investigan y preservar referencias para las próximas generaciones.</p><p>¿Tenés fotografías, documentos, libros, recortes o recuerdos para aportar? Primero conversamos, registramos su procedencia y acordamos por escrito cómo pueden consultarse y difundirse.</p><a class="secondary-link" href="mailto:ocarina.producciones@gmail.com?subject=Colaboraci%C3%B3n%20con%20Ocarina%20Recuerda">Proponer una colaboración ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand brand-footer" href="#"><span class="brand-mark">OR</span><span><strong>OCARINA RECUERDA</strong><small>Un pueblo. Sus documentos. Sus historias.</small></span></a><p>Proyecto independiente impulsado por Ocarina Producciones.<br>La consulta es libre. Los derechos pertenecen a sus autores y titulares.</p><span>© 2026 · Archivo en construcción permanente</span></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
